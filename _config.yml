@@ -1,0 +1,24 @@
+name: 光魚 Blog
+email: i@lightfish.cn
+author: Lightfish Zhang
+url: https://lightfish.cn
+resume_site: https://lightfish.cn
+baseurl: 
+description: 技术是认知的工具
+github_username: lightfish-zhang
+github: https://github.com/lightfish-zhang
+plugins: [jekyll-paginate]
+permalink: /:year-:month-:day-:title
+paginate: 12
+paginate_path: "/page/:num/"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+highlighter: rouge
+markdown: kramdown
+googlaAnalyticsID : UA-98628575-1
+comments :
+  gitalk :
+    clientID : 9221ce6bf2d845ef6f29
+    clientSecret : e979e538309d3daf5b637f7b4af5f832e55ebdd6
+    repo : lightfish-zhang.github.io
+    owner : lightfish-zhang
+    admin : lightfish-zhang
