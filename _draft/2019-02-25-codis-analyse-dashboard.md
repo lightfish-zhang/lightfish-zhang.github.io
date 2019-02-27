@@ -19,5 +19,9 @@ Codis 是非常棒的 Redis 分布式方案，源码量不多，不管是阅读�
 
 ## dashboard 的主要作用
 
+codis-dashboard 是 codis 的集群管理中心，一个 codis 集群只有一个 dashboard，它负责 proxy 与 server 的添加/删除/数据迁移。
+
+## dashboard 的启动
+
 
 
