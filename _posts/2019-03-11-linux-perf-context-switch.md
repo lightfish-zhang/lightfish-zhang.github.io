@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux 性能诊断——CPU 上下文切换 Context Switches
+title: Linux 进程性能问题——CPU 上下文切换 Context Switches
 date: 2019-03-08 20:30:00 +0800
 category: Linux
 tag: [perf]

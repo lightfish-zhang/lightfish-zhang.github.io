@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 分布式 Redis 方案 Codis 3.x 的设计思想
+title: 分析 Codis 3.x 的设计思想
 date: 2019-02-21 20:30:00 +0800
 category: Redis
 tag: [design]
