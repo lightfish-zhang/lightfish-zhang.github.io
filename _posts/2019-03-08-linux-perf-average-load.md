@@ -4,7 +4,7 @@ title: Linux 进程性能问题——平均负载 Load 问题
 date: 2019-03-08 20:30:00 +0800
 category: Linux
 tag: [perf]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/cpu_logo.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/cpu_logo.jpeg
 icon: note
 ---
 

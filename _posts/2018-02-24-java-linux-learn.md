@@ -4,7 +4,7 @@ title: 记录在Linux下理解Java项目的过程
 date:   2018-02-24 20:30:00 +0800
 category: java
 tag: [java]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/java-linux.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/java-linux.png
 ---
 
 

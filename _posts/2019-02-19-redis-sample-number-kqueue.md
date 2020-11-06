@@ -4,7 +4,7 @@ title: 工作案例分析-号码分配服务设计
 date: 2019-02-19 20:30:00 +0800
 category: Redis
 tag: [design]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/basic-knowledge-base-about-icon-design-get-started.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/basic-knowledge-base-about-icon-design-get-started.png
 icon: note
 ---
 

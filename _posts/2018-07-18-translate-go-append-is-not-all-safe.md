@@ -4,7 +4,7 @@ title: Go 语言的 append 不总是线程安全的
 date:   2018-07-18 20:30:00 +0800
 category: golang
 tag: [translate]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/gopher-5.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/gopher-5.jpg
 icon: code
 ---
 

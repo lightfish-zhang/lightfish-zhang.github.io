@@ -4,7 +4,7 @@ title: 架构思考-代理服务与负载均衡算法
 date:   2018-08-19 20:30:00 +0800
 category: Server
 tag: [server]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/rocks-balancing.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/rocks-balancing.jpg
 icon: design
 ---
 

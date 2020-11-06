@@ -4,7 +4,7 @@ title: 深度学习基本概念
 date:   2018-09-05 20:30:00 +0800
 category: deeplearn
 tag: [deeplearn]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/DeeperLearning-Feature.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/DeeperLearning-Feature.jpg
 icon: book
 ---
 

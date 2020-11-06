@@ -4,7 +4,7 @@ title: 音视频编程基本概念梳理
 date:   2019-01-31 20:30:00 +0800
 category: 音视频编程
 tag: [av]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/yuv-tv-color.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/yuv-tv-color.png
 icon: book
 ---
 
@@ -50,7 +50,7 @@ PCM + WAV header (44 bit) = WAV
 
 PCM 全称 Pulse Code Modulation，脉冲编码调制，是音频的裸数据，PCM 文件缺少描述参数，一般需要 WAV header 来描述，如：量化格式(sampleFormat)、采样率(sampleRate)、声道数(channel)。
 
-![wav header](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/wav-sound-format.gif)
+![wav header](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/wav-sound-format.gif)
 
 
 描述音频文件的大小、质量
@@ -115,11 +115,11 @@ JPEG 是静态图像压缩标准，有良好的压缩性能，然而，对于视
 
 如果你未理解过 YUV 概念，来看这一张熟悉的图片：
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/yuv-tv-color.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/yuv-tv-color.png)
 
 90年代彩色电视或黑白电视，测试画面使用的图片，图片的色块直接地反映了 YUV 的色彩空间，再来看下一张端口图:
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/yuv-port.GIF)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/yuv-port.GIF)
 
 以上端口中，老式的黑白电视使用 Y C 端口，彩色电视采用 YUV 端口，以前在家接过电视盒、DVD端口的童鞋是不是很熟悉。其中 Y 代表明亮度/灰阶值 (Luma)；U 和 V 代表色度(chroma)，指定像素的颜色。
 
@@ -132,11 +132,11 @@ JPEG 是静态图像压缩标准，有良好的压缩性能，然而，对于视
 
 看下一张图片反映 YUV 与 RGB 的差异
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/yuv-vs-rgb.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/yuv-vs-rgb.png)
 
 YUV 最常见的采样格式是 4:2:0，其中 0 不代表其中一个输入为0，而是交错的 4:2:0 与 4:0:2，左右两列的色度是共享的，如下图片
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/800px-Yuv420.svg.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/800px-Yuv420.svg.png)
 
 不考虑时域压缩，YUV的一帧图片比RGB的一帧图片的比特量化要大，比如 RGB 用 8 bit 表示一个像素，YUV 需要用 12 bit 表示一个像素。
 
@@ -173,7 +173,7 @@ gop_size，代表两个 I 帧之间的帧数目。理论上，在存储空间固
 
 压缩比，一般而言，I帧的压缩率是 7 (与 JPG 差不多)，P帧是20，B帧是50
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/video-gop.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/video-gop.png)
 
 
 PTS 与　DTS
@@ -185,7 +185,7 @@ PTS 与　DTS
 
 Tip: 在 FFmpeg 工具中，AVPacket结构体是描述解码前或编码后的压缩数据，AVFrame是描述视频的一帧图像，而 DTS 是 AVPacket 结构体的一个成员属性，PTS 是 AVFrame 的一个成员属性。另外，FFmpeg 中还有一个属性，基准时间 time_base ，即每 1 pts 的时间间隔，单位秒
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/video-dts-pts.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/video-dts-pts.jpg)
 
 
 

@@ -59,7 +59,7 @@ hooks/
 
 - gitlab或github都提供事件通知功能，gitlab可以在项目设置的`Intergrations`选项里设置，如下图所示，可以设置接口地址与回调的事件类型
 
-![brower-render-prase-html](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201702/gitlab-webhook-set.png)
+![brower-render-prase-html](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201702/gitlab-webhook-set.png)
 
 - 接口通知格式可以参考官方说明[Webhooks Setting](https://git.yml360.com/help/web_hooks/web_hooks)
     + 请求头`request header`中包含通知的事件类型，如`X-Gitlab-Event: Push Hook`

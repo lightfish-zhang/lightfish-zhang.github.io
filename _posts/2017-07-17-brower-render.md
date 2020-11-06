@@ -29,7 +29,7 @@ tag: [brower]
 
 请求页面
 
-![brower-render-prase-html](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-prase-html.png)
+![brower-render-prase-html](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-prase-html.png)
 
 - 浏览器向服务端发出获取请求，如 `GET / HTTP/1.1`
 - 服务端返回HTML，浏览器会采取非常机智的措施并提前解析，生成DOM(document object model)
@@ -37,21 +37,21 @@ tag: [brower]
 
 ## recalculate style, 
 
-![brower-render-dom-css-recalculate-style](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-dom-css-recalculate-style.png)
+![brower-render-dom-css-recalculate-style](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-dom-css-recalculate-style.png)
 
 - HTML结合CSS重新计算样式
 
-![brower-render-dom-css-to-renderTree](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-dom-css-to-renderTree.png)
+![brower-render-dom-css-to-renderTree](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-dom-css-to-renderTree.png)
 
 - HTML与CSS结合起来，生成渲染树`render tree`，与`DOM tree`类似，但是有所不同
 - 渲染数比起DOM树缺少某些内容，如`<HEAD>`,`<style>`,`<script>`等，头部与脚本等元素不见了
 
-![brower-render-renderTree-only-display](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-renderTree-only-display.png)
+![brower-render-renderTree-only-display](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-renderTree-only-display.png)
 
 - 值得一提的时，如果有元素的CSS属性有`display:none`，该节点的段落也不会出现在渲染树
 
 
-![brower-render-tree](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-tree.png)
+![brower-render-tree](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-tree.png)
 
 - 同样，如果CSS中添加了伪元素，如`after`,`befor`,就会添加到渲染树中
 
@@ -64,7 +64,7 @@ tag: [brower]
 
 布局
 
-![brower-render-layout](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-layout.png)
+![brower-render-layout](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-layout.png)
 
 - 这一步在chrome的devTool中显示为`Layout`, 也有称为`reflow`
 - 布局，简单来说就是排版成一个个嵌套的方框 —— `网络布局模型`
@@ -73,17 +73,17 @@ tag: [brower]
 
 ## raster 光栅化
 
-![brower-render-raster](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-raster.png)
+![brower-render-raster](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-raster.png)
 
 - 这一步是光栅，可以理解为将`矢量图`转化为`位图`
 ### raster for page 页面
 
-![brower-render-raster-paint](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-raster-paint.png)
+![brower-render-raster-paint](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-raster-paint.png)
 
 
 - 图中，左边是光栅器需要执行的的绘制调用，以便填充像素
 
-![brower-render-raster-paint-complete](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-raster-paint-complete.png)
+![brower-render-raster-paint-complete](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-raster-paint-complete.png)
 
 - 上图是填充完成的状态
 - 填充顺序正如图左边的`绘制调用`如下
@@ -94,12 +94,12 @@ tag: [brower]
 
 ### raster for image 图片
 
-![brower-render-raster-image-draw-bitmap](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-raster-image-draw-bitmap.png)
+![brower-render-raster-image-draw-bitmap](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-raster-image-draw-bitmap.png)
 
 - 在前面的光栅调用中，可以看到`drawBitmap`
 - 网页中出现图片时，浏览器需要请求图片文件，拿到之后，需要将图片文件的数据解码到内存，如下
 
-![brower-render-raster-image-decode-resize](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-raster-image-decode-resize.png)
+![brower-render-raster-image-decode-resize](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-raster-image-decode-resize.png)
 
 - 解码后，可能还需要调整尺寸
 
@@ -108,13 +108,13 @@ tag: [brower]
 - 之前的`layout`布局与`raster`光栅步骤是处理单个`layer`图层，接下来是合成多个图层
 - 在`devTool`中称作`composite layers`
 
-![brower-render-layout-composite](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-layout-composite.png)
+![brower-render-layout-composite](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-layout-composite.png)
 
 - 合成图层，影响的因素有：透明度，动画
 
 ## GPU put the pictures up on screen
 
-![brower-render-layout-upload-gpu](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201707/brower-render-layout-upload-gpu.png)
+![brower-render-layout-upload-gpu](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201707/brower-render-layout-upload-gpu.png)
 
 - 最后GPU根据指示将图片显示到屏幕上
 

@@ -4,7 +4,7 @@ title: Linux 虚拟容器系列——从零实现
 date: 2018-08-17 20:30:00 +0800
 category: Linux container
 tag: [C, lxc]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/linux-container-busybox.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/linux-container-busybox.png
 icon: note
 ---
 
@@ -87,7 +87,7 @@ make defconfig
 make menuconfig
 ```
 
-![busybox select static option](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/busybox-select-static-option.png)
+![busybox select static option](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/busybox-select-static-option.png)
 
 - 进行编译，然后在新建的目录 _install 下生成类 unix 的目录结构
 
@@ -297,7 +297,7 @@ lrwxrwxrwx 1 lightfish lightfish 0 2月   6 19:32 uts -> 'uts:[4026531838]'
 
 使用 C语言进行网络编程比较复杂，我使用 ip 命令编写 shell 脚本来构建一个简单的虚拟机网络环境:
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/linux-network-namespace-bridge.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/linux-network-namespace-bridge.jpg)
 
 脚本内容如下，注意需要 root 权限运行
 
@@ -448,7 +448,7 @@ ping: sendto: Network is unreachable
 
 理想中的容器的网络环境应该如 docker 的桥接模型一样，如下：
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/linux-netns-docker-bridge.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/linux-netns-docker-bridge.png)
 
 TODO:: 实现上面模型
 

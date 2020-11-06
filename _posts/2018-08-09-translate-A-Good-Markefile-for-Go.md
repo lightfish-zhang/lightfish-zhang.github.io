@@ -4,7 +4,7 @@ title: 一个好的 Go 语言 Makefile 是怎样的
 date:   2018-08-09 20:30:00 +0800
 category: golang
 tag: [translate]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/gopher-6.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/gopher-6.jpg
 icon: code
 ---
 

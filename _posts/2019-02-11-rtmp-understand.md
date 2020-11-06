@@ -4,7 +4,7 @@ title: 理解RTMP协议——简单认识
 date:   2019-02-11 20:30:00 +0800
 category: RTMP
 tag: [protocol]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/video-icon.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/video-icon.jpeg
 icon: book
 ---
 
@@ -16,7 +16,7 @@ icon: book
 
 直播行业的兴起，带动了音视频相关技术的发展，本文介绍 RTMP 协议，让人快速理解它。看下面一张视频直播的大体架构图，找找 RTMP 的位置，明白 RTMP 扮演的角色与重要性
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-application.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-application.jpg)
 
 在上面，RTMP 在视频直播场景的架构中，担任了重要的"血管"般的角色
 
@@ -32,7 +32,7 @@ RTMP 在音视频相关的协议中，它的突出特点是：连接可靠、低
 
 RTMP 是基于TCP的二进制协议，（顺便一提，http为广泛应用的明文协议之一）
 
-![rtmp-base-on-tcp](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-base-on-tcp.webp)
+![rtmp-base-on-tcp](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-base-on-tcp.webp)
 
 RTMP 默认端口 1935
 

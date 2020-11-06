@@ -4,7 +4,7 @@ title: 你的 pprof 暴露了
 date:   2018-03-25 20:30:00 +0800
 category: golang
 tag: [translate]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/gopher-1.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/gopher-1.jpg
 ---
 
 

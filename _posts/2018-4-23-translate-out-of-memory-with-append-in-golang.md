@@ -4,7 +4,7 @@ title: Go 语言中 append 导致内存不足
 date:   2018-04-23 20:30:00 +0800
 category: golang
 tag: [translate]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/gopher-3.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/gopher-3.jpg
 icon: code
 ---
 

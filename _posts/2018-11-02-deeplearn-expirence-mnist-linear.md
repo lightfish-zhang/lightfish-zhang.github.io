@@ -4,7 +4,7 @@ title: 全连接softmax——MNIST例子
 date:   2018-11-20 20:30:00 +0800
 category: deeplearn
 tag: [deeplearn]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/Softmax-Function-compressor.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/Softmax-Function-compressor.jpg
 icon: code
 ---
 

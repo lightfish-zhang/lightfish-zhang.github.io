@@ -4,7 +4,7 @@ title: 将ffmpeg封装golang/cgo库
 date:   2018-12-24 20:30:00 +0800
 category: 音视频编程
 tag: [ffmpeg, golang]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/cgo.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/cgo.jpg
 icon: note
 ---
 

@@ -4,7 +4,7 @@ title: 如何在浏览器中播放pcm音频
 date:   2019-01-01 20:30:00 +0800
 category: 音视频编程
 tag: [browser]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/pcm_decode_process.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/pcm_decode_process.png
 icon: note
 ---
 
@@ -46,7 +46,7 @@ const getWebFileArrayBuffer = async (url) => {
 
 - 第二步，对获取的 pcm 文件流 ArrayBuffer 添加 wav header，我们先弄明白 header 的构造:
 
-![wav header](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/wav-sound-format.gif)
+![wav header](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/wav-sound-format.gif)
 
 看以上图片，我们需要将获取到的 pcm data 添加 44 bytes 的 header，根据 header 的结构，对齐、紧凑地填充信息，在 javascript 中，需要使用 `DataView` 类型帮助我们进行字节填充的操作，注意`DataView`提供的 API 默认使用 `little end` 的数据格式，需要额外定义 `big end` 格式填充字节的方法。
 

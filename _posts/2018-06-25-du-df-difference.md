@@ -4,7 +4,7 @@ title: du与df显示不相等的磁盘容量的问题
 date:   2018-06-25 20:30:00 +0800
 category: Linux
 tag: [linux]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/linux-inode.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/linux-inode.jpg
 icon: book
 ---
 

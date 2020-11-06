@@ -4,7 +4,7 @@ title: 删除操作，rsync与rm谁更快？
 date:   2018-04-30 19:30:00 +0800
 category: shell 
 tag: [shell]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/Red-delete-button.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/Red-delete-button.jpg
 icon: note
 ---
 

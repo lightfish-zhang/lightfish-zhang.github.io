@@ -85,11 +85,11 @@ NoSql 是指非关系型数据库，种类非常多，它们常常可以用来�
 
 - 在描述多对多关系上，关系型数据库需要建立至少两个表（用户表、社交关系表，查询时需要**连接join**）；图形数据库至少需要一个表（用户表），它原生提供**关系**这个功能特性（直接的指针指向）。两者设计上的不同，表现出不同的查询路径：
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/database-diff-relational-graph.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/database-diff-relational-graph.png)
 
 - 在性能表现上，摘选 [基于图数据库实现即时推荐引擎](https://zhuanlan.zhihu.com/p/43871070) 的图片
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/database-perf-relational-graph.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/database-perf-relational-graph.jpg)
 
 > 在一个拥有百万用户的社交网络中，假设每个人有50个朋友，从A成员出发不断查询朋友节点。传统关系型数据库RDBMS查询到第4个朋友节点时响应时间激增，到第5个时已经不能返回查询结果了。但是图数据库，还具有良好的响应性能。
 

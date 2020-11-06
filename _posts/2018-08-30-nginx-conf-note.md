@@ -4,8 +4,8 @@ title: 如何定制Nginx配置
 date:   2018-08-30 20:30:00 +0800
 category: nginx
 tag: [server]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/nginx-icon.png
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/nginx.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/nginx-icon.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/nginx.png
 icon: note
 ---
 

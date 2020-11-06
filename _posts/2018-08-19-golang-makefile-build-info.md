@@ -4,7 +4,7 @@ title: 巧用Makefile给Go程序添加版本信息
 date:   2018-08-19 22:30:00 +0800
 category: Golang
 tag: [golang]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/2018/golang-makefile.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/2018/golang-makefile.jpg
 icon: code
 ---
 

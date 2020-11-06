@@ -4,7 +4,7 @@ title: Linux 进程性能问题——CPU 上下文切换 Context Switches
 date: 2019-03-08 20:30:00 +0800
 category: Linux
 tag: [perf]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/switch-icon.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/switch-icon.png
 icon: note
 ---
 
@@ -15,7 +15,7 @@ icon: note
 
 Linux 是一个多任务操作系统，当比较多数量的进程抢夺 CPU 时，上下文切换的损耗会显得比较大，本文讲述如何衡量 Linux 系统的上下文切换的性能指标，以及上下文切换的基础知识。
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/linux-context-switch.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/linux-context-switch.jpg)
 
 ## 什么是 CPU 上下文切换
 
@@ -32,7 +32,7 @@ Linux 是一个多任务操作系统，当比较多数量的进程抢夺 CPU 时
 
 了解更多 Linux Protection Rings 特权保护级别，看下图
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201903/linux-protection-rings.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201903/linux-protection-rings.jpg)
 
 不同级别可以访问的资源级别不一样，如最里层的内核空间 Ring 0 可以直接访问所有资源，最外层的用户空间 Ring 3 只能访问受限资源，不能直接访问内存等硬件设备，必须通过系统调用陷入内核中，才能访问特权资源。
 

@@ -4,7 +4,7 @@ title: Kafka使用了什么性能策略
 date: 2018-12-01 20:30:00 +0800
 category: Kafka
 tag: [perf]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/kafka-thubmail.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/kafka-thubmail.png
 icon: book
 ---
 
@@ -43,7 +43,7 @@ Kafka 作为愈加流行的流处理平台，让人好奇它为何如此受人�
 
 实际上，现代的操作系统已经对磁盘IO做了复杂的优化，Linux 下有一个常见的缩写名词 vfs，即虚拟文件系统(virtual file system)，它对内存与外存（磁盘）进行映射，使读写速度得到提升，比如以下且不限于：
 
-![graph for page cache](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/linux-vfs-page-cache.png)
+![graph for page cache](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/linux-vfs-page-cache.png)
 
 - 预读(read-ahead)，提前将较大的磁盘块载入内存，用户程序读取该磁盘上数据的效率，就等同将内核的内存拷贝到用户程序分配的内存上的速度
 - 后写(write-behind)，一定次数的小的逻辑写操作会映射到磁盘缓存(page cache)，合并为一个大的物理写操作。写入的时机一般是操作系统周期性 `sync` 而定，用户亦可主动调用 `sync`，(PS:在Linux用户都该知道拔U盘前执行一次`sync`)
@@ -63,7 +63,7 @@ Kafka 作为愈加流行的流处理平台，让人好奇它为何如此受人�
 ssize_t sendfile(int out_fd, int in_fd, off_t *offset, size_t count);
 ```
 
-![sendfile process](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/linux-sendfile-process.webp)
+![sendfile process](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/linux-sendfile-process.webp)
 
 Zero-Copy 技术对 Java 程序来说无异于神兵，让缓存的大小与速度脱离了 `JVM` 的局限。
 
@@ -132,23 +132,23 @@ Kafka 如何应对这些环节呢？
 
 直观来看，分区(partition)、消费者(consumer)会发生一下几种情况的 rebalance
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/ktdg_04in01.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/ktdg_04in01.png)
 
 一开始有四个分区，一个消费者，四个分区的消息都需要被拉取，只好关联同一个消费者
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/ktdg_04in02.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/ktdg_04in02.png)
 
 消费者有两个了，可以均衡分配
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/ktdg_04in03.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/ktdg_04in03.png)
 
 消费者四个了，更好了
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/ktdg_04in04.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/ktdg_04in04.png)
 
 消费者五个，为了保存消息的时序性，维护一个offset值，一个分区最多只能关联一个消费者，所以这里多出一个消费者空闲了
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201901/ktdg_04in05.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201901/ktdg_04in05.png)
 
 由于业务要求，消费者有两个分组了，消息的时序性是只对一个分区、一个消费者分组生效的，这里一个分区可以关联多个相互不同分组的消费者，维护多个 offset 
 

@@ -4,7 +4,7 @@ title: 理解RTMP协议——握手连接
 date:   2019-02-12 20:30:00 +0800
 category: RTMP
 tag: [protocol]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/Handshake.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/Handshake.jpg
 icon: book
 ---
 
@@ -18,14 +18,14 @@ icon: book
 
 下图是播放器与 rtmp 服务端通信的例子
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/RTMP-player-client-and-server.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/RTMP-player-client-and-server.png)
 
 另外推荐阅读 [nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module) 源码，比如，握手协议相关代码在 `ngx_rtmp_handshake.c` 文件
 
 
 ## RTMP 的握手连接的例子
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-play-process.webp)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-play-process.webp)
 
 ### step 1, tcp 三次握手
 
@@ -40,7 +40,7 @@ Adobe 协议中描述的是简单握手，而 Adobe 产品 Flash Media Server �
 
 #### 简单握手
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-handshake.jpg)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-handshake.jpg)
 
 与流程图有点不同，握手的实际流程分三个步骤:
 
@@ -50,7 +50,7 @@ Adobe 协议中描述的是简单握手，而 Adobe 产品 Flash Media Server �
 
 我使用 Wireshark 抓包，验证了过程(我使用 nginx-rtmp-module 做服务器，ffmpeg推流，VLC Media Play播放)
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-wireshark-play-1.png)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-wireshark-play-1.png)
 
 报文的解释：
 
@@ -120,7 +120,7 @@ RTMP 是用于网络传输的二进制协议，默认使用 Big-Endian 格式，
 
 1528Bytes随机数的部分平均分成两部分，一部分764Bytes存储public key(公共密钥)，另一部分764Bytes存储digest(密文，32字节)。
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-handshake-complex.webp)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-handshake-complex.webp)
 
 从二进制报文的角度，判断复杂握手的特征是，Version部分不为0，服务器端可根据这个来判断是否简单握手或复杂握手。
 

@@ -4,7 +4,7 @@ title: 分析 Codis 3.x 的设计思想
 date: 2019-02-21 20:30:00 +0800
 category: Redis
 tag: [design]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/redis-icon-logo.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/redis-icon-logo.png
 icon: note
 ---
 

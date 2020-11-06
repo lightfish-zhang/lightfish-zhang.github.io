@@ -4,7 +4,7 @@ title: 理解RTMP协议——chunk格式
 date:   2019-02-13 20:30:00 +0800
 category: RTMP
 tag: [protocol]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/Live-Streaming.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/Live-Streaming.jpg
 icon: book
 ---
 
@@ -76,7 +76,7 @@ Chunk 的大小设置，通过 Message Type = 1 的控制消息声明
 
 如果 message length 大于 max chunk size，则需要将这个message切分为多个 chunk 。前面几个 chunk size 必须是 max size，最后一个就是剩余的大小。
 
-![](https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/rtmp-message-alloc-chunk.webp)
+![](https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/rtmp-message-alloc-chunk.webp)
 
 以上图为例，Message大小为 300 bytes，默认Chunk size 为 128 bytes，进行拆分成chunk的过程。
 

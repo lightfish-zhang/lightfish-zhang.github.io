@@ -4,7 +4,7 @@ title: Linux 虚拟容器系列——认识Namespace
 date: 2018-08-15 20:30:00 +0800
 category: Linux container
 tag: [lxc]
-thumbnail: https://raw.githubusercontent.com/lightfish-zhang/media-library/master/image/201902/Linux_Containers_logo.png
+thumbnail: https://cdn.jsdelivr.net/gh/lightfish-zhang/media-library/image/201902/Linux_Containers_logo.png
 icon: note
 ---
 
